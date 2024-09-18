@@ -1,39 +1,55 @@
 {
-  "version": 2.0,
-  "questions": [
-    {
-      "question": "This is a Sample Question 1?",
-      "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "a",
-      "difficulty": "beginner"
-    },
-    {
-      "question": "This is a Sample Question 2?",
-      "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "c",
-      "difficulty": "beginner"
-    }
-  ]
+	"version": 2.0,
+	"questions": [
+		{
+			"question": "In the Newton-Raphson power flow method, what does the update step for voltage angles and magnitudes rely on?",
+			"answers": {
+				"a": "Power mismatch equations",
+				"b": "Admittance matrix (Y-bus)",
+				"c": "Line flow equations",
+				"d": "Generator cost functions"
+			},
+			"correctAnswer": "a"
+		},
+		{
+			"question": "In the context of the Newton-Raphson method, what is typically represented by the diagonal elements of the Jacobian matrix?",
+			"answers": {
+				"a": "Self-admittances of buses",
+				"b": "Partial derivatives of active and reactive power with respect to voltage magnitudes and angles",
+				"c": "Power losses in transmission lines",
+				"d": "Line impedances between buses"
+			},
+			"correctAnswer": "b"
+		},
+		{
+			"question": "Which of the following is true regarding the computational effort in the Newton-Raphson method?",
+			"answers": {
+				"a": "The method requires fewer iterations but involves higher computational effort per iteration.",
+				"b": "The method requires more iterations with lower computational effort per iteration.",
+				"c": "The method is computationally less intensive than the Gauss-Seidel method.",
+				"d": "The method's computational effort is independent of the system size."
+			},
+			"correctAnswer": "a"
+		},
+		{
+			"question": "If N is the total number of buses in the power system and M is the number of generator buses in power system then the size of the Jacobian matrix is:",
+			"answers": {
+				"a": "(N-2M-1) × (N-2M-1)",
+				"b": "(N-M-1) × (N-M-1)",
+				"c": "(2N-1) × (2N-1)",
+				"d": "(2N-M-1) × (2N-M-1)"
+			},
+			"correctAnswer": "d"
+		},
+		{
+			"question": "What is the main difference between the Gauss-Seidel method and the Newton-Raphson method in terms of convergence characteristics?",
+			"answers": {
+				"a": "Gauss-Seidel method converges faster than Newton-Raphson",
+				"b": "Newton-Raphson method has quadratic convergence, while Gauss-Seidel has linear convergence",
+				"c": "Both methods have the same convergence characteristics",
+				"d": "Gauss-Seidel method always converges, while Newton-Raphson does not"
+			},
+			"correctAnswer": "b"
+		}
+	]
 }
